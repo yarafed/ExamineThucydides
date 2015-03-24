@@ -1,0 +1,5 @@
+<root>
+    <item name='net.thucydides.core.pages.components.HtmlTable java.util.List&lt;java.util.Map&lt;java.lang.Object,java.lang.String&gt;&gt; rowsFrom(org.openqa.selenium.WebElement)'>
+        <annotation name='java.lang.annotation.Deprecated'/>
+    </item>
+</root>

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Move to folder","Test Case 1: 'Move To' button","SUCCESS","2015-03-24T12:09:16.901Z","0.0","22.29"
+"Compose","Test Case 2: 'Send' button","SUCCESS","2015-03-24T12:08:19.474Z","0.0","55.78"
+"Search","Test Case 3: Search field","SUCCESS","2015-03-24T12:09:39.785Z","0.0","19.33"
