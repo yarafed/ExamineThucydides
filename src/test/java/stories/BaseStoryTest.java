@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(ThucydidesRunner.class)
-public class BaseStoryTest {
+public abstract class BaseStoryTest {
 
     @Managed
     public WebDriver webdriver;
