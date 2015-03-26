@@ -47,7 +47,7 @@ public class MoveToFolderStoryTest extends BaseStoryTest {
         moveToFolderSteps.clickMoveToButton();
         moveToFolderSteps.verifyThatPopUpAppeared();
         moveToFolderSteps.selectFolder(folderName);
-        moveToFolderSteps.verifyThatMessageIsNotInInboxFolder();
+       // moveToFolderSteps.verifyThatMessageIsNotInInboxFolder();
         moveToFolderSteps.moveToFolder("Social");
         moveToFolderSteps.verifyThatMessageIsInFolder("Social");
     }
