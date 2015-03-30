@@ -6,7 +6,7 @@ import net.thucydides.core.pages.PageObject;
 import net.thucydides.core.pages.WebElementFacade;
 import org.openqa.selenium.WebDriver;
 
-public class Header  extends PageObject {
+public class Search extends PageObject {
 
     @FindBy(xpath = "//a[contains(@title,'Account')]")
     WebElementFacade accountLink;
@@ -17,7 +17,10 @@ public class Header  extends PageObject {
     @FindBy( xpath = "//button[@aria-label='Search Gmail']")
     WebElementFacade searchButton;
 
-    public Header(WebDriver driver){
+    @FindBy( xpath = "//span[text()='Loading...']")
+    WebElementFacade loading;
+
+    public Search(WebDriver driver){
         super(driver);
     }
 
@@ -31,5 +34,9 @@ public class Header  extends PageObject {
 
     public void clickSearchButton(){
         searchButton.click();
+    }
+
+    public void waitForLoaadingPage() {
+        waitForTextToDisappear("Loading...");
     }
 }

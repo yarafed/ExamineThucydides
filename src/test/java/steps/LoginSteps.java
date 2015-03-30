@@ -6,14 +6,14 @@ import net.thucydides.core.annotations.StepGroup;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
 import pages.LoginPage;
-import pages.elements.Header;
+import pages.elements.Search;
 
 import static org.fest.assertions.Assertions.assertThat;
 
 public class LoginSteps extends ScenarioSteps{
 
     private LoginPage loginPage;
-    private Header header;
+    private Search search;
 
     public LoginSteps(Pages pages){
         super(pages);
@@ -44,7 +44,7 @@ public class LoginSteps extends ScenarioSteps{
 
     @Step
     public void verifyAuthorization(){
-        header.waitForAccountLink();
+        search.waitForAccountLink();
         assertThat(getDriver().getCurrentUrl().contains("inbox")).isTrue();
     }
 
