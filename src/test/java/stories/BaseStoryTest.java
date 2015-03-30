@@ -20,7 +20,7 @@ public abstract class BaseStoryTest {
 
     @BeforeClass
     public static void test(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
     }
 
 }
